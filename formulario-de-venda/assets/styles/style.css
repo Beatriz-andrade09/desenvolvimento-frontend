@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+h1, h2, h3 {
+    color: #272626;
+}
+
+input, textarea {
+    border: none;
+    border-bottom: 1px solid  #ccc;
+    padding: 10px 0;
+}
+
+.form-group input[type=text], 
+.form-group input[type=number],
+.form-group input[type=date],
+textarea {
+    width: 400px;
+    display: block;
+}
+
+.require-field {
+    color: red;
+}
+
+
+.header {
+    background-color: blueviolet;
+    height: 200px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 150px;
+}
+
+.header h2 {
+    color: #f0f0f0;
+}
+
+.container-form { 
+    background-color: white;
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    top: -62px;
+}
+
+input[type=radio] {
+    display: inline-block;
+}
+
+.title-form {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.title-form p {
+    text-align: center;
+    color: #673ab7;
+    border-bottom: 1px solid #673ab7;
+    text-transform: uppercase;
+    width: 100px;
+    margin: 0 auto;
+    line-height: 20px;
+    height: 30px;
+    padding: 10px;
+}
+
+.subtitle-form {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.form-body {
+    padding-top: 10px;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+.optional-box {
+    display: inline-block;
+    margin: 10px 0px;
+    padding-right: 10px;
+}
+
+.optional-box ul li {
+    list-style: none;
+}
+
+input[type=submit] {
+    background-color: #673ab7; 
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border: 1px solid transparent;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #673ab7;
+    border-color: #673ab7;
+}
+
+
+@media screen and (max-width: 970px) {
+    input[type=submit] {
+        width: 80px;
+    }
+
+    .container-form { 
+        width: 60%;
+    }
+
+    .form-group input[type=text],
+    .form-group input[type=number],
+    .form-group input[type=date],
+    .form-group input[type=file],
+    textarea {
+        width: 250px;
+    }
+
+    .subtitle-form {
+        font-size: 13px;
+    }
+}
