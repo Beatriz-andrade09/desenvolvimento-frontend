@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: palevioletred;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+nav {
+    gap: 35%;
+    background-color: #eac1db;
+    width: 100%;
+    height: 100px;
+}
+
+nav .menu li {
+    padding: 10px;
+}
+
+nav .menu li a {
+    font-family: 'Dancing Script', cursive;
+    color: #8a3e52; 
+    transition: color 0.3s, font-weight 0.3s; 
+}
+
+nav .menu li a:hover {
+    color: #050406;
+    font-weight: bold;
+}
+
+main {
+    background-color: #050406;
+}
+
+.container {
+    padding-top: 10px;
+    width: 77%;
+    background-color: #FFFAFA;
+}
+
+.container,
+.news,
+.button,
+.buy-ingress {
+    margin: auto;
+}
+
+.news {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+input[type="radio"] {
+    display: none; 
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-button {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: palevioletred;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#slide1:checked ~ .navigation .nav-button:nth-child(1),
+#slide2:checked ~ .navigation .nav-button:nth-child(2) {
+    background-color: #050406;
+}
+
+.news a,
+.shopping-container li,
+footer .social-media {
+    margin-top: 10px;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.news-item h3 {
+    padding: 20px;
+}
+
+.ttpd-container {
+    border-bottom: 1px solid #eac1db;
+}
+
+.ttpd-information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.ttpd-description {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.ttpd-description-item img {
+    max-width: 900px;
+    height: 450px;
+}
+
+.ttpd-description-item p {
+    max-width: 700px;
+}
+
+.more-information {
+    max-width: 200px;
+    margin: auto;
+    margin-top: 50px;
+    color: palevioletred;
+    font-weight: bold;
+    border:  1px solid #050406;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.more-information:hover {
+    background-color: palevioletred;
+    color: #050406;
+    transform: scale(1.05);
+}
+
+.shopping-section {
+    background-color: #DCDCDC;
+    padding: 20px;
+}
+
+.shopping-container {
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.shopping-container li {
+    flex: 1 1 calc(33.33% - 20px); 
+    max-width: 300px;
+    border: 1px solid #050406;
+    margin: 10px; 
+    padding: 30px;
+}
+
+.shopping-container img {
+    max-width: 100%; 
+    width: 200px;
+    height: 200px;
+}
+
+.ttpd-album img {
+    width: 350px;
+}
+
+.news-item figure img {
+    width: 400px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+nav img {
+    width: 70px;
+    height: 80px;
+}
+
+.tour-section figure img {
+    max-width: 500px;
+    height: 150px;
+}
+
+.button {
+    background-color: #eac1db;
+    color: #050406;
+    border:  1px solid #050406;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.shopping-container .button {
+    width: 140px;
+    height: 50px;
+}
+
+.tour-container .button,
+.ttpd-container .button {
+    width: 200px;
+    height: 50px;
+}
+
+.button,
+.buy-ingress,
+.more-information {
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: #050406;
+    color: #eac1db;
+    transform: scale(1.05);
+}
+
+.tour-section {
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tour-container {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buy-ingress {
+    background-color: #050406;
+    border:  1px solid #eac1db;
+    color: #eac1db;
+}
+
+.buy-ingress:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+footer {
+    color: #050406;
+    padding: 20px;
+    background-color: #DCDCDC;
+}
+
+footer .social-media {
+    justify-content: center;
+    gap: 40px;
+}
+
+footer .social-media a {
+    color: #050406;
+}
+
+@media (max-width: 1100px) {
+    nav {
+        gap: 15%;
+    }
+    
+    nav .menu li {
+        padding: 5px;
+    }
+    
+    .ttpd-description-item img {
+        height: 350px;
+    }
+
+    .news img,
+    .ttpd-description-item img {
+        max-width: 500px;
+    }
+
+    .tour-section figure img {
+        max-width: 500px;
+        height: 100px;
+    }
+
+    .news-item p {
+        margin: auto;
+        max-width: 500px;
+    }
+
+    .news-item p {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 708px) {
+    nav {
+        gap: 0;
+        padding: 40px;
+    }
+
+    .ttpd-description-item img {
+        height: 200px;
+    }
+
+    .ttpd-description-item p {
+        max-width: 450px;
+        font-size: 14px;
+    }
+
+    .news-item p {
+        margin: 40px;
+        max-width: 500px;
+        font-size: 16px;
+    }
+
+    .news img {
+        max-width: 300px;
+    }
+
+    .shopping-container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .shopping-container li {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: 200px;
+        border: none;
+    }
+
+    .shopping-container figcaption {
+        font-size: 13px;
+    }
+     
+    .ttpd-album img {
+        width: 250px;   
+    }
+}
+
+@media (max-width: 508px) {
+    .ttpd-description-item img {
+        height: 190px;
+    }
+
+    .ttpd-description-item p {
+        max-width: 300px;
+    }
+    
+    .ttpd-album img {
+        width: 150px;   
+    }
+}
+
+
+@media (max-width: 450px) {
+    .news img {
+        max-width: 250px;
+    }
+
+    .tour-section {
+        height: 510px;
+    }
+
+    .tour-section figure img {
+        max-width: 200px;
+        height: 100px;
+    }
+
+}

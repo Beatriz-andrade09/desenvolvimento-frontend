@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.main-container {
+    max-width: 900px;
+    min-height: 100vh;
+}
+
+.main-container,
+.login-container,
+.logo-instagram,
+.login-container .form-login input,
+.other-links,
+.login-container .new-account,
+.get-the-app,
+#footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container,
+.banner-container,
+.login-container .form-login input,
+.other-links {
+    margin: 0 auto;
+}
+
+.banner-container,
+.login-container {
+    width: 50%;
+}
+
+.banner-container {
+    position: relative;
+    max-width: 460px;
+}
+
+.banner-container img,
+.banner-slider img  {
+    width: 100%;
+    height: auto;
+}
+
+.banner-slider {
+    position: absolute;
+    top: 24px;
+    left: 150px;
+    width: 243px;
+    height: 539px;
+    overflow: hidden;
+}
+
+.banner-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: slideShow 12s infinite;
+}
+
+.banner-slider img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.banner-slider img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.banner-slider img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.banner-slider img:nth-child(4) {
+    animation-delay: 9s;
+}
+
+@keyframes slideShow {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 1;
+    }
+    43.33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.login-container,
+.form-login .other-links,
+.get-the-app {
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.login-container .form-login, .login-container .new-account {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    width: 380px;
+}
+
+.logo-instagram {
+    margin: 40px auto;
+    height: 55px;
+    width: 200px;
+}
+
+.login-container .form-login input {
+    width: 270px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.login-container .form-login input[type='text'],
+.login-container .form-login input[type='password'] {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+}
+
+.login-container .form-login input[type='submit'] { 
+    background-color: #b2dffc;
+    border: 1px solid #b2dffc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: white;
+}
+
+.login-container .form-login input[type='submit'],
+.separator span,
+.login-with-facebook a,
+.login-container .new-account a {
+    font-weight: bold;
+}
+
+.login-container .form-login input[type='submit']:hover { 
+    background-color: #1877F2;
+    cursor: pointer;
+}
+
+.separator {
+    position: relative;
+    text-align: center;
+}
+
+.separator .line {
+    margin: 25px auto 35px;
+    width: 270px;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.separator span {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    background-color: #ffffff;
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.other-links {
+    margin-top: 30px;
+}
+
+.other-links a {
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+.login-with-facebook img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.login-with-facebook a {
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    line-height: 15px;
+    color: #385195;
+}
+
+.forgot-password {
+    font-size: 13px;
+    color: rgb(0, 55, 107);
+    margin-bottom: 20px;
+}
+
+.login-container .new-account { 
+    margin-top: 10px;
+    height: 60px;
+}
+
+.login-container .new-account span {
+    font-size: 14px;
+} 
+
+.login-container .new-account a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #0095F8;
+    padding: 2px;
+} 
+
+.get-the-app {
+    width: 350px;
+    margin: 15px auto;
+}
+
+.get-the-app p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center; 
+    width: 100%;     
+}
+
+.get-the-app .app-icons a {
+    text-transform: none;
+}
+
+.get-the-app img {
+    margin: 10px;      
+    width: 120px;
+    height: 35px;
+}
+
+footer {
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    text-align: center;
+    margin-top: 30px;
+}
+
+#footer-links li {
+    list-style: none;
+    margin: 10px;
+}
+
+.copyright {
+    margin: 20px;
+}
+
+@media screen and (max-width: 915px) {
+    .banner-container {
+        display: none;
+    }
+
+    .login-container {
+        width: 100%;
+    }
+
+   #footer-links {
+        flex-wrap: wrap;
+   }
+} 
+
+@media screen and (max-width: 450px) {
+    .login-container .form-login input, .separator .line {
+        width: 250px;
+    }
+
+    .login-container .form-login, .login-container .new-account {
+        border: none;
+    }
+    
+    .get-the-app {
+        width: 150px;
+        margin: 15px auto;
+    }
+
+    .get-the-app p {
+        margin-bottom: 10px;
+    }
+
+    .get-the-app img {
+        margin-top: 5px;      
+        height: 35px;
+    }
+
+    #footer-links {
+      margin: 5px;
+    }  
+}

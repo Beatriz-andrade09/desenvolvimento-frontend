@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>BSA Host</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <script src="assets/scripts/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-container">
+            <nav>
+                <a href="#">
+                    <img src="assets/images/logo.png" alt="Logotipo da BSA Host" class="logo">
+                </a>
+                <button class="menu-toggle">☰</button> 
+                <ul class="navbar-items">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#">Trabalhe conosco</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#" id="default-btn">Entrar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="main-banner">
+                <h1>BSA Host</h1>
+                <p>Os melhores serviços e preços para projetos de todos os tamanhos!</p>
+            </div>
+            <section class="section-container">
+                <ul>
+                    <li>
+                        <i class="fas fa-solid fa-shield-virus"></i>
+                        <h2>Segurança</h2>
+                        <p>Proteja seus dados com nossa hospedagem segura, com criptografia avançada e monitoramento 24/7 para garantir a integridade e confidencialidade das suas informações.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-solid fa-rocket"></i>
+                        <h2>Performance</h2>
+                        <p>Experimente a máxima performance com nossa hospedagem otimizada, oferecendo velocidades ultrarrápidas e alta disponibilidade para garantir que seu site carregue rapidamente e funcione sem interrupções.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-solid fa-comment"></i>
+                        <h2>Suporte</h2>
+                        <p>Conte com nosso suporte dedicado 24/7, pronto para ajudar com qualquer dúvida ou problema, garantindo que seu site funcione sem problemas e você receba a assistência que precisa a qualquer hora.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="pricing-container">
+                <h2>Planos e Preços</h2>
+                <p>Selecione o plano que atende suas necesidades</p>
+                <div class="plans-container">
+                    <div class="plan">
+                        <ul>
+                        <li class="price">R$ 15/mês</li>
+                        <li class="plan-name">Básico</li>
+                        <li>2 GB de espaço</li>
+                        <li>1 subdominío</li>
+                        <li>25 contas de e-mails</li>
+                        <li>C-panel</li>
+                        <li>Suporte 24/7</li>
+                        <li class="learn-more-button">Saiba mais</li>
+                        </ul>
+                    </div> 
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$ 30/mês</li>
+                            <li class="plan-name">Dedicado</li>
+                            <li>5 GB de espaço</li>
+                            <li>10 subdominíos</li>
+                            <li>50 contas de e-mails</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="learn-more-button">Saiba mais</li>
+                        </ul>
+                    </div> 
+                    <div class="plan">
+                        <ul>
+                            <li class="price recommended">R$ 50/mês</li>
+                            <li class="plan-name">Dedicado Plus</li>
+                            <li>10 GB de espaço</li>
+                            <li>12 subdominíos</li>
+                            <li>100 contas de e-mails</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="learn-more-button recommended">Saiba mais</li>
+                        </ul>
+                    </div> 
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$ 100/mês</li>
+                            <li class="plan-name">Cloud</li>
+                            <li>20 GB de espaço</li>
+                            <li>20 subdominíos</li>
+                            <li>200 contas de e-mails</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="learn-more-button">Saiba mais</li>
+                        </ul>
+                    </div>   
+                </div>
+            </section>
+            <section class="searchdomain-container">
+                <h2>Qual domínio você quer para o seu site?</h2>
+                <p>Verifique se o domínio está disponível</p>
+                <form>
+                    <input type="text" name="domain" id="domain" placeholder="Digite o domínio desejado">
+                    <button type="submit">Procurar domínio</button>
+                </form>
+            </section>
+            <section class="contact-container">
+                <h2>Fale conosco</h2>
+                <p>Envie uma mensagem para nós, em até 24 horas um especialista entrará em contato.</p>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Seu nome">
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                    <textarea name="message" id="message" placeholder="Sua mensagem"></textarea>
+                    <input type="submit" value="Enviar"></input>
+            </form>
+            </section>
+        </main>
+        <footer>
+            <p>BSA Host&nbsp;©&nbsp;2024. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
