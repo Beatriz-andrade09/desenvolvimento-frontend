@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    background-color: #d9d9d7;
+    width: 100%;
+    height: 105px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.menu li {
+    padding-bottom: 2px;
+}
+
+.menu li a {
+    padding-bottom: 10px;
+    color: #1E3932;
+}
+
+.sublime a:hover {
+    border-bottom: 1px solid #1E3932;
+}
+
+.buy-here {
+    border: 1px solid #1E3932;
+    border-radius: 200px;
+    padding: 10px;
+}
+
+.logo  {
+    width: 70px;
+    height: 70px;
+}
+
+.banner {
+    min-width: 1200px;
+    min-height: 700px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/banner.svg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+
+.menu-mobile,
+.coffe-banner img {
+    display: none;
+}
+
+.container {
+    background-color: #F2F0EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100%;
+}
+
+.local-container  {
+    color: #e0ded9;
+    background-color: #1E3932;
+    padding-top: 100px;
+    max-height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.local-container img {
+    width: 50%;
+    height: 370px;
+}
+
+.local-container  p {
+    text-align: justify;
+    width: 70%;
+    line-height: 20px;
+}
+
+.local-container img {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+}
+
+.local-container h2 {
+    font-size: 20px;
+}
+
+.explore-coffee-container {
+    background-color: #F2F0EB;
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.explore-coffee-container p {
+    text-align: justify;
+    width: 70%;
+    line-height: 20px;
+}
+
+.recipe-container {
+    border-top: 1px solid #006241;
+    background-color: #F2F0EB;
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    color: black;
+}
+
+.recipe-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 50px;
+    height: 400px;
+    padding-top: 80px;
+}
+
+.container-logo {
+    max-height: 10px;
+}
+
+.container-logo .logo {
+    position: relative;
+    margin: auto;
+} 
+
+.recipe-container .container-logo .logo {
+    top: -130px;
+} 
+
+.ingredients-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.ingredients-list {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.custom-list {
+    list-style: outside;
+    padding: 10px;
+}
+
+ul.custom-list li {
+    margin-bottom: 10px;
+}
+
+.text-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.coffee-container {
+    margin: 30px;
+    max-width: 1200px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coffee-content {
+    flex: 1 1 300px; 
+    max-width: 300px;
+    height: 560px;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    border: 1px solid #A68164;
+}
+
+.coffee-content h2 {
+    font-size: 14px; 
+}
+
+.coffee-content p {
+    font-size: 15px;   
+    line-height: 1.5; 
+    text-align: justify;  
+    hyphens: auto; 
+    word-spacing: 5px;  
+}
+
+.coffee-image {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.bookmark-container {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    z-index: 1;
+    background-color: #A68164;
+}
+
+.bookmark-image {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/bookmark.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.coffee-content:hover .bookmark-container {
+    opacity: 1;
+}
+
+.btn-buy {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color:  #1E3932;
+    border: 1px solid #1E3932;
+    color: whitesmoke;
+    border-radius: 200px;
+    padding: 10px;
+}
+
+.newsletter-container {
+    border-top: 1px solid #1E3932;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.newsletter-container .container-logo .logo {
+    top: -160px;
+} 
+
+.newsletter-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;  
+}
+
+.newsletter-container input[type='email'] {   
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid #1E3932;
+    outline: none;
+    padding: 7px;
+    margin: 20px auto;
+    opacity: 0.6;
+    background-color: #007549;
+    border-radius: 10px;
+}
+
+.newsletter-container input[type='email']::placeholder {
+    color: white;
+}
+
+.newsletter-container button {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #1E3932;
+    border: 1px solid #1E3932;
+    color: whitesmoke;
+    border-radius: 200px;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(21 53 44);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.copyrights {
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+.social-media a {
+    opacity: 0.5;
+}
+
+.social-media a:hover {
+    opacity: 1;
+}
+
+
+@media (max-width: 910px) { 
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu {
+        display: none;
+    }
+    
+    .logo  {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-mobile {
+        width: 100%;
+        height: 105px;
+        display: flex; 
+        justify-content: space-evenly;
+        align-items: center; 
+        gap: 10px;
+        background-color: #e0ded9;
+    }
+
+    .menu.active {
+        display: flex; 
+        flex-direction: column; 
+        align-items: start; 
+        justify-content: center;
+        position: absolute; 
+        top: 105px;
+        height: 200px;
+        left: 0;
+        background-color: #F2F0EB;
+        z-index: 1;
+        opacity: 0.7;
+        transition: all 0.5s ease;
+    }   
+
+    .menu.active li a:hover {
+        border-bottom: #007549 1px solid;
+    }   
+
+    .menu li { 
+        padding-left: 10px;        
+    }
+ 
+    .mobile-content {
+        display: flex; 
+        flex: 1 1 100px;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #item-2 {
+        text-align: center;
+        flex: 2;
+     }
+
+    .mobile-content p {
+        font-family: 'Pacifico', cursive;
+        font-size: 30px;
+        color: #DEB887;
+        text-shadow: #694641 3px 3px 3px;
+    } 
+
+    .coffee-banner {
+        display: block;
+        width: 100%;
+        height: 290px;
+        background-image: url("../images/banner-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .coffee-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .local-container {
+        gap: 30px;
+    }
+
+    .local-container img {
+        width: 100%;
+    }
+
+    .local-container h2 {
+        font-size: 15px;
+    }
+
+    .newsletter-container .container-logo .logo {
+        top: -140px;
+    }
+
+    .text-information p {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .explore-coffee-container {
+        padding: 0;
+    }
+
+    .recipe-content {
+        gap: 10px;
+    }
+
+    .recipe-container {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .banner {
+        display: none;
+    }
+
+}
+
