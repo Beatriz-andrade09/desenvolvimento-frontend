@@ -19,11 +19,13 @@ Confira abaixo a lista dos projetos concluídos até o momento.
 
 ### 📚 Projetos Desenvolvidos
 
-1. **<a href="https://the-eras-swift.vercel.app/" target="_blank">The Eras Swift</a>** 💖
+1. **<a href="https://the-eras-swift.vercel.app/">The Eras Swift</a>** 💖
 
+2. **<a href="https://formulario-venda-carro-ten.vercel.app/">Formulário para venda de carro</a>** 🚗
 
-2. **<a href="https://formulario-venda-carro-ten.vercel.app/" target="_blank">Formulário para venda de carro</a>** 🚗
+3. **<a href="https://bsa-host.vercel.app/">Página inicial de plataforma de hospedagem</a>** 💻
 
-3. **<a href="https://bsa-host.vercel.app/" target="_blank">Página inicial de plataforma de hospedagem</a>** 💻
+4. **<a href="https://instagram-amber-kappa.vercel.app/">Página de login do Instagram</a>** 📲
 
-4. **<a href="https://instagram-amber-kappa.vercel.app/" target="_blank">Página de login do Instagram</a>** 📲
+5. **<a href="https://chapters-lyart.vercel.app/">Página inicial da cafeteria Chapters</a>** ☕
+
