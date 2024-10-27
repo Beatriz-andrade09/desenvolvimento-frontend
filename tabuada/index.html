@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
+    <title>Tabuada</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" onsubmit="calcular(event)">
+            <h1>Tabuada</h1>
+            <p>Insira um número base para gerar sua tabuada. No segundo campo numérico, defina até qual número deseja calcular. Selecione a operação entre os dois campos e veja os resultados!</p>
+            <div class="operation">
+                <input type="number" name="number-one" id="number-one" min="1" required>
+                <select name="operator" id="operador">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" name="number-two" id="number-two" min="1" max="15" required>
+            </div>
+            <input type="submit" value="Calcular">
+
+            <div class="result">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
