@@ -29,6 +29,8 @@ Confira abaixo a lista dos projetos concluídos até o momento.
 
 5. **<a href="https://chapters-lyart.vercel.app/">Página inicial da cafeteria Chapters</a>** ☕
 
-6. **<a href="https://tabuada-three-mu.vercel.app/">Tabuada simples com JS</a>** 🧮
+6. **<a href="https://tabuada-three-mu.vercel.app/">Tabuada simples</a>** 🧮
+
+7. **<a href="https://gerador-qr-code-blush.vercel.app/">Gerador de QR Code</a>** 📱
 
 
