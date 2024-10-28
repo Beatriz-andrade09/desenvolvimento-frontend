@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="shortcut icon" href="assets/images/qr-code.jpg" type="image/x-icon">
+    <script src="assets/script/script.js" defer></script>
+    <title>Gerador de QR Code</title>
+</head>
+<body>
+    <div class="container">
+        <div class="banner"></div>
+        <div class="container-qr-code">
+           <div class="content">
+                <img src="assets/images/portrait-futuristic-female-humanoid-with-advanced-technology.jpg" alt="Avatar" class="avatar">
+                <h1>Gerador de QR Code</h1>
+                <p>Insira um link ou texto para gerar</p>
+                <input type="text" name="url" id="url" placeholder="Ex: https://www.mywebsite.com/" required>
+                <input type="button" value="Gerar" id="btn" onclick="gerarQrCode()">
+           </div>
+            <img src="" class="qr-code"  id="qr-code" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
