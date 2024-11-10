@@ -598,7 +598,7 @@ footer {
     }
 
     .menu-container { 
-        height: 80px;
+        height: 65px;
         position: fixed;
         background-color: #000000;
         z-index: 1;
