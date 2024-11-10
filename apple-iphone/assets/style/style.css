@@ -23,12 +23,15 @@ nav {
     font-size: 10px;
 }
 
-.menu-container {
-    width: 100%;
-    height: 50px;
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+.menu-container {
+    width: 100%;
+    height: 50px;
     flex-direction: row;
     gap: 4%;
     white-space: nowrap; 
@@ -80,10 +83,7 @@ nav {
 }
 
 .banner-iphone .purchase-info {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
     width: 100%;
     max-width: 600px;
@@ -95,9 +95,6 @@ nav {
 }
 
 .banner-iphone .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100px;
     height: 35px;
     background-color: #235A8F;
@@ -109,10 +106,7 @@ nav {
 
 .container {
     padding-top: 30px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 4%;
     width: 100%;
     color: var(--color-hover);
@@ -150,9 +144,7 @@ nav {
 }
 
 .product-content {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
 }
 
@@ -165,9 +157,7 @@ nav {
     bottom: 0;   
     top: 100px;
     z-index: 1;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
     max-width: 600px;
     padding-bottom: 60px;
@@ -181,9 +171,7 @@ nav {
 }
 
 .container .iphone-options {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     flex-direction: row;
     width: 260px;
@@ -246,12 +234,9 @@ nav {
 .section-container {
     width: 100%;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
 }
 
 .section-info {
@@ -293,41 +278,35 @@ nav {
 
 .section-info-ia {
     width: 100%;
-    /* padding: 100px; */
     flex-direction: column;
     background-color: #0A0A0A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
 .section-info-ia .info-item:first-of-type {
     width: 100%;
+    padding: 10px;
 }
  
 .info-ia-item {
     max-width: 900px;
     width: 100%;
     display: flex;
-    align-items: center;
     gap: 30px;
 }
 
 .info-ia-itens {
-    min-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
+    width: 400px;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
@@ -337,11 +316,6 @@ nav {
     border-radius: 20px;
 }
 
-.info-hours {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .section-battery {
   font-size: 17px;
@@ -374,10 +348,7 @@ nav {
 .info-item {
     padding: 10px;
     flex: 1 1 400px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .section-audio p {
@@ -458,10 +429,7 @@ footer {
 }
 
 .footer-contact {
-    display: flex;
-    justify-items: center;
     flex-wrap: wrap;
-    align-items: center;
     gap: 10px;
     padding-bottom: 10px;
 }
@@ -550,7 +518,6 @@ footer {
         color: var(--color-text);
         font-size: 17px;
     }
-
     .menu-container.active {
         transition: all 1.3s ease;
     }
@@ -570,7 +537,7 @@ footer {
 }
 
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 690px) {
     .banner-iphone {
         height: 450px;
     }
@@ -611,16 +578,23 @@ footer {
 
     .info-audio-item {
        max-width: 600px;
-       padding: 5px;
+       padding: 40px;
        gap: 10px;
        min-width: 400px;
        flex: 1 1 400px;
     }
 
     .section-audio p, .info-item p {
+        max-width: 95%;
         font-size: 17px;
         line-height: 30px;
         text-align: justify;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    .text-glow  {
+        padding: 10px;
     }
 
     .menu-container { 
@@ -631,6 +605,11 @@ footer {
 
     .container {
         padding-top: 70px;
+        overflow: hidden;
+    }
+
+    .info-item {
+        padding: 5px;
     }
 
     .info-ia-item {
