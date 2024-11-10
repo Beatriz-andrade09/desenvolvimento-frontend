@@ -598,13 +598,14 @@ footer {
     }
 
     .menu-container { 
+        height: 80px;
         position: fixed;
         background-color: #000000;
         z-index: 1;
     }
 
     .container {
-        padding-top: 70px;
+        padding-top: 100px;
         overflow: hidden;
     }
 
