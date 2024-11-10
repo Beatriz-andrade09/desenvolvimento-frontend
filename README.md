@@ -23,7 +23,7 @@ Confira abaixo a lista dos projetos concluídos até o momento.
 
 2. **<a href="https://formulario-venda-carro-ten.vercel.app/">Formulário para venda de carro</a>** 🚗
 
-3. **<a href="https://bsa-host.vercel.app/">Página inicial de plataforma de hospedagem</a>** 💻
+3. **<a href="https://bsa-host.vercel.app/">Página inicial para plataforma de hospedagem</a>** 💻
 
 4. **<a href="https://instagram-amber-kappa.vercel.app/">Página de login do Instagram</a>** 📲
 
@@ -31,6 +31,8 @@ Confira abaixo a lista dos projetos concluídos até o momento.
 
 6. **<a href="https://tabuada-three-mu.vercel.app/">Tabuada simples</a>** 🧮
 
-7. **<a href="https://gerador-qr-code-blush.vercel.app/">Gerador de QR Code</a>** 📱
+7. **<a href="https://gerador-qr-code-blush.vercel.app/">Gerador de QR Code</a>** 🔗 
+   
+8. **<a href="https://apple-iphone-16-pro.vercel.app/">Página do iPhone 16 Pro </a>** 📱
 
 
