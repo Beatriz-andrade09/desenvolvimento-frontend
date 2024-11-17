@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flourish Health</title>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="assets/script/script.js" defer></script>   
+</head>
+<body>
+    <header class="menu-container">
+        <img src="assets/images/logo.png" alt="Logo">
+        <ul class="menu-links">
+            <li><a href="#section-life-style-container">Home</a></li>
+            <li><a href="#section-imc-container">Saúde e Bem-Estar</a></li>
+            <li><a href="#section-mental-health-container">Cuidando da Mente</a></li>
+        </ul>      
+    </header>
+
+    <main class="container flex-center">
+        <section class="section-life-style-container flex-column" id="section-life-style-container">
+            <div class="banner">
+                <img src="assets/images/slender-woman-doing-yoga-fresh-air.jpg" alt="Mulher na natureza">
+            </div>
+            <h1>A Importância do equilíbrio entre saúde, mentalidade e vida</h1>
+            <p class="text-justify">
+                Em nossa rotina moderna, manter um equilíbrio saudável entre corpo, mente e estilo de vida
+                é essencial para o bem-estar e a qualidade de vida.  Acreditamos que esse equilíbrio é a chave para alcançar uma vida plena e satisfatória, 
+                e para isso, é importante cuidar de cada um desses aspectos.
+            </p>  
+            <ul class="life-style-list-container flex-row">
+                <li>
+                    <h3>Saúde Física <i class="fa-solid fa-dumbbell"></i></h3>
+                    <p>Cuidar do corpo por meio de uma alimentação balanceada, atividade física regular e sono adequado impacta diretamente nossa energia e disposição. A saúde física é o alicerce que sustenta nosso dia a dia e nos prepara para lidar com desafios de forma mais resiliente. Manter o corpo em boa forma contribui para a longevidade e para uma vida mais ativa.</p>
+                </li>
+                <li>
+                    <h3>Saúde Mental <i class="fa-solid fa-brain"></i></h3>
+                    <p>A saúde mental é tão essencial quanto a física e influencia nossos pensamentos, emoções e comportamentos. Cultivar uma mentalidade positiva, praticar o autoconhecimento e buscar momentos de relaxamento e autocuidado são ações fundamentais para prevenir estresse, ansiedade e outras condições mentais. Um estado mental saudável permite uma visão mais equilibrada e otimista da vida.</p>
+                </li>
+                <li>
+                    <h3>Equilíbrio na Vida <i class="fa-solid fa-balance-scale"></i></h3>
+                    <p>Conciliar responsabilidades profissionais, familiares e pessoais de forma harmoniosa é fundamental para reduzir o estresse e criar um senso de realização e paz interior. Ter momentos de lazer, socialização e descanso contribui para o equilíbrio na vida, nos permitindo recarregar as energias e fortalecer nossas relações.</p>
+                </li>
+            </ul>    
+        </section>
+        
+        <section class="section-imc-container flex-column" id="section-imc-container">
+            <div class="imc-info flex-column">
+               <div class="imc-info-item">
+                    <p>
+                        Na Flourish Health, nossa missão é inspirar e apoiar você a encontrar um equilíbrio que promova saúde e bem-estar, 
+                        permitindo viver de maneira saudável, realizada e em harmonia consigo mesmo e com o mundo ao seu redor. A saúde física
+                        e emocional andam lado a lado, e compreender o que o corpo precisa é essencial para alcançar uma vida plena.
+                    </p>
+               </div>
+
+               <div class="imc-info-item">
+                    <p>
+                        Calcular o Índice de Massa Corporal (IMC) é uma maneira prática de avaliar se o peso está adequado em relação à altura. 
+                        Embora não seja uma medida definitiva de saúde, o IMC oferece uma visão geral importante sobre o estado nutricional de uma
+                        pessoa, sendo um ponto de partida para reflexões sobre saúde e bem-estar. Ele pode ajudar a identificar possíveis riscos à saúde,
+                        como doenças cardiovasculares, diabetes e problemas articulares, especialmente quando o IMC está fora da faixa considerada saudável.
+                    </p>
+               </div>
+
+               <div class="imc-info-item">
+                    <p>
+                        Monitorar o IMC regularmente não é apenas uma questão de números, mas uma oportunidade de cuidar da saúde de forma integrada. 
+                        Essa prática permite tomar decisões mais informadas sobre mudanças nos hábitos alimentares e na rotina de atividades físicas, 
+                        elementos fundamentais para o bem-estar geral. Ao entender seu IMC e buscar um equilíbrio saudável, você está investindo na
+                        sua qualidade de vida, fortalecendo tanto o corpo quanto a mente.
+                    </p>
+                    <span>
+                        <strong>Calcule seu IMC abaixo e dê o primeiro passo para uma vida mais equilibrada e cheia de bem-estar!</strong>
+                    </span>
+               </div>
+        
+            </div>
+
+            <div class="form-container flex-column">
+                <div id="form-imc">
+                    <form class="flex-column">
+                        <img src="assets/images/3761037.jpg" class="banner-imc" alt="">
+                        <div class="form-control">
+                            <label for="weight">Peso (kg)</label>
+                            <input type="number" min="1" value ="" placeholder="Exemplo: 75,0" id="weight">
+                        </div>
+                        <div class="form-control">
+                            <label for="height">Altura (m)</label>
+                            <input type="number" min="1" value =""placeholder="Exemplo: 1,75" id="height">
+                        </div>
+                        <div class="action-control flex-center">
+                            <input type="submit" value="Calcular IMC" id="btn-calculate">
+                            <input type="reset" value="Limpar" id="reset">
+                        </div>
+                    </form> 
+                </div>
+                <div class="result-container hidden" id="result-container">
+                    <div class="situation flex-column">
+                        <div class="result">
+                            <h2>Seu Índice de Massa Corporal (IMC):</h2>
+                            <span id="imc-value" style="font-size: 2rem; color: #ED5296;">0</span>
+                        </div>
+                        <h2>Confira as classificações e o que elas significam:</h2>
+                        <img src="assets/images/5002882.jpg"  class="banner-imc" alt="">
+                        <ul class="imc-classifications flex-column">
+                            <li>
+                                <span>Menor que 18,5</span>
+                                <p><strong>Magreza</strong>: Seu IMC indica que você pode estar abaixo do peso ideal. Consultar um profissional de saúde pode ser útil.</p>
+                            </li>
+                            <li>
+                                <span>Entre 18,5 e 24,9</span>
+                                <p><strong>Normal</strong>: Parabéns! Seu peso está dentro da faixa saudável para a sua altura.</p>
+                            </li>
+                            <li>
+                                <span>Entre 25 e 29,9</span>
+                                <p><strong>Sobrepeso</strong>: Você está um pouco acima do peso saudável. Pode ser interessante adotar hábitos mais saudáveis para o bem-estar.</p>
+                            </li>
+                            <li>
+                                <span>Entre 30 e 39,9</span>
+                                <p><strong>Obesidade</strong>: O IMC indica que você está com sobrepeso considerável. Consultar um médico para orientação é recomendado.</p>
+                            </li>
+                            <li>
+                                <span>Maior que 40</span>
+                                <p><strong>Obesidade Grave</strong>: É importante buscar orientação profissional para um acompanhamento mais adequado.</p>
+                            </li>
+                        </ul>
+                        
+                         <input type="button" value="Voltar" id="btn-return">
+                    </div> 
+                </div>
+            </div>
+        </section> 
+
+        <section class="section-mental-health-container flex-column text-justify" id="section-mental-health-container">
+            <p>
+                A saúde mental é tão essencial quanto a saúde física para uma vida equilibrada. 
+                Ela impacta diretamente como lidamos com os desafios do dia a dia, tomamos decisões
+                e construímos nossas relações. Cuidar da mente envolve práticas que promovem bem-estar
+                emocional, como a busca por autoconhecimento, momentos de autocuidado e apoio de 
+                profissionais quando necessário.
+             </p>
+
+            <p>
+                Assim como o corpo, a mente precisa de atenção e cuidado constantes. Incorporar hábitos
+                que fortaleçam o autoconhecimento e promovam o equilíbrio mental pode ser extremamente
+                benéfico. Aqui estão algumas práticas que você pode adotar:
+            </p>
+            
+            <ul class="mental-health-list flex-row">
+                <li class="mental-health-list-item">
+                    <span>Meditação</span>
+                    <img src="assets/images/woman-practicing-yoga.jpg" alt="Mulher meditando">
+                    <p>
+                        A meditação pode ajudar a melhorar a clareza mental e reduzir o estresse. 
+                        Ela permite que você se concentre no momento presente e desenvolva maior autoconhecimento.
+                    </p>
+                    <a href="#"class="read-more">Saiba mais</a>
+                </li>
+
+                <li class="mental-health-list-item">
+                    <span>Escrita reflexiva</span> 
+                    <img src="assets/images/serious-young-woman-designer-sitting-indoors-night-writing-notes.jpg" alt="Mulher escrevendo">
+                   <p> 
+                        Dedicar um tempo para escrever sobre suas emoções, pensamentos
+                        e experiências diárias pode ser uma maneira poderosa de se 
+                        conhecer melhor e processar sentimentos.
+                    </p>
+                    <a href="#"class="read-more">Saiba mais</a>
+                </li>
+
+                <li class="mental-health-list-item">
+                    <span>Conectar-se com amigos e familiares</span>
+                    <img src="assets/images/mother-daughter-playing-with-toys.jpg" alt="Mulher brincando com seu filho">
+                    <p>
+                        Manter uma comunicação constante com pessoas próximas ajuda a fortalecer vínculos, reduzir sentimentos de solidão e melhorar a saúde mental.
+                    </p>
+                    <a href="#"class="read-more">Saiba mais</a>
+                </li>
+                
+                <li class="mental-health-list-item">
+                    <span>Escutar música relaxante</span>
+                    <img src="assets/images/woman-holding-vinyl-disc-medium-shot.jpg" alt="Mulher escutando musica">
+                    <p>
+                        Ouvir música suave e relaxante pode ajudar a reduzir a ansiedade, melhorar o humor e proporcionar um momento de paz e tranquilidade.
+                    </p>
+                    <a href="#"class="read-more">Saiba mais</a>
+                </li>
+                
+                <li class="mental-health-list-item">
+                    <span>Pintar as unhas</span>
+                    <img src="assets/images/woman-doing-manicure-home-filing-nails-with-emery-board.jpg" alt="Mulher pintando as unhas">
+                    <p>
+                        Pintar as unhas é uma forma simples e relaxante de cuidar de si mesma, ajudando a aumentar a autoestima e a criatividade.
+                    </p>
+                    <a href="#"class="read-more">Saiba mais</a>
+                </li>
+                
+                <li class="mental-health-list-item">
+                    <span>Desconectar-se das redes sociais</span>
+                    <img src="assets/images/woman-hidrating-after-training.jpg" alt="Mulher se hidratando em trilha">
+                    <p>
+                        A exposição constante a comparações sociais pode impactar sua saúde mental. 
+                        Tente reservar momentos para se desconectar e focar em atividades que alimentem sua alma.
+                    </p>
+                    <a href="#"class="read-more">Saiba mais</a>
+                </li>
+
+                <li class="mental-health-list-item">
+                    <span>Fazer terapia</span>
+                    <img src="assets/images/full-shot-young-woman-undergoing-therapy.jpg" alt="Mulher realizando terapia">
+                    <p>
+                        A terapia oferece um espaço seguro para explorar sentimentos, melhorar a autoestima e lidar com desafios emocionais, promovendo bem-estar mental.
+                    </p>
+                    <a href="#"class="read-more">Saiba mais</a>
+                </li>
+            </ul>
+           
+            <p>No Flourish Health, acreditamos que o autoconhecimento é uma jornada contínua, essencial para o desenvolvimento pessoal e o equilíbrio emocional. Ao entender melhor seus próprios sentimentos, necessidades e limites, você se torna mais capaz de viver de maneira plena, tomando decisões que promovam seu bem-estar físico e mental.</p>
+            <p>Lembre-se, a saúde mental não é um destino, mas uma prática diária de cuidado consigo mesmo. Ao cuidar da mente, você cria as bases para uma vida mais feliz, saudável e equilibrada.</p>            
+        </section>
+    </main>
+
+    <footer class="footer-container flex-column">
+        <div class="footer-newsletter flex-column">
+            <img src="assets/images/logo.png" alt="Logo">        
+            <p><strong>Assine nossa Newsletter:</strong></p>
+            <input type="email" placeholder="Seu e-mail" />
+            <button>Assinar</button>
+        </div>
+        <div class="footer-contact">
+            <p><strong>Contato:</strong> <a href="mailto:contato@flourishhealth.com">contato@flourishhealth.com</a></p>
+            <p><strong>Telefone:</strong> (11) 98765-4321</p>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 Flourish Health. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+</body>
+</html>
