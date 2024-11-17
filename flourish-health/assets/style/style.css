@@ -368,8 +368,12 @@ h1 {
 
 @media screen and (max-width: 617px) {
 
-    .menu-links li a {
+    .menu-links li a, .mental-health-list-item .read-more {
         font-size: 13px;
+    }
+
+    .mental-health-list-item .read-more {
+        padding: 5px;
     }
 
     .menu-container img {
