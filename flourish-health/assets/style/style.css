@@ -319,6 +319,7 @@ h1 {
     border: 1px solid var(--color-pink);
     padding: 10px;
     font-size: 14px;
+    margin-bottom: 10px;
 }   
 
 .mental-health-list-item .read-more:hover {
