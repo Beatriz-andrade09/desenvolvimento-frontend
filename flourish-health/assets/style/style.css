@@ -270,7 +270,8 @@ h1 {
 }
 
 .mental-health-list-item {
-    flex: 1 1 25%; 
+    max-width: 300px;
+    flex: 1 1 300px; 
     min-height: 450px;
     gap: 10px;
     display: flex;
@@ -278,16 +279,19 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
     border-radius: 10px;
-    padding: 15px;
+    padding: 5px;
     border: 1px solid var(--color-pink);
     background-color: #fdeffb;
 }
 
 .mental-health-list-item p {
-    font-size: 13px;
+    max-width: 250px;
+    padding: 15px;
+    font-size: 12px;
 }
 
 .mental-health-list-item span {
+    text-align: center;
     margin: 20px;
     color: var(--color-pink);
 }
@@ -324,14 +328,13 @@ h1 {
 
 .footer-container {
     background-color: #000000ed;
-    min-height: 40vh;
+    min-height: 20vh;
     color: var(--color-white);
 }
 
 .footer-newsletter {
     background-color: #fdeffb;
     padding: 20px;
-    min-height: 50vh;
     color: #121212;
 }
 
@@ -362,7 +365,7 @@ h1 {
 
 .footer-copyright {
     text-align: center;
-    min-height: 10vh;
+    min-height: 5vh;
 }
 
 .footer-container a {
