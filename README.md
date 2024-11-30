@@ -1,5 +1,5 @@
 <p align="center">
-     👩‍💻 Projetos do Curso de Formação Fron-end ✨
+     👩‍💻 Projetos do curso de formação Fron-end ✨
 </p>
 
 <p align="center">
@@ -36,5 +36,7 @@ Confira abaixo a lista dos projetos concluídos até o momento.
 8. **<a href="https://apple-iphone-16-pro.vercel.app/">Página do iPhone 16 Pro </a>** 📱
 
 9. **<a href="https://flourish-health.vercel.app/">Flourish Health - Calcula IMC </a>** 🌸
+
+10. **<a href="https://englishsound.vercel.app/">English Sound - To-do list </a>** ✔️
 
 
