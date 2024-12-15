@@ -19,7 +19,6 @@ body {
 
 .main-container {
     width: 100%;
-    min-height: 140vh;
     justify-content: space-around;
     align-items: center;
 }
@@ -61,6 +60,7 @@ body {
 
 .form-control input:focus {
     border: 1px solid var(--color-red);
+    background-color: #E8F0FE;
 }
 
 .background-login {
@@ -69,7 +69,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    min-height: 160vh;
+    height: 140vh;
 }
 
 button {
@@ -136,6 +136,10 @@ span {
 @media screen and (max-width: 1003px) {
     .background-login {
         display: none;
+    }
+
+    .main-container {
+        min-height: 30vh;
     }
 
     .form-login {   
