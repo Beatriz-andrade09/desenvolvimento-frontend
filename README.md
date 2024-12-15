@@ -39,4 +39,7 @@ Confira abaixo a lista dos projetos concluídos até o momento.
 
 10. **<a href="https://englishsound.vercel.app/">English Sound - To-do list </a>** ✔️
 
+11. **<a href="https://gerador-senha-sandy.vercel.app/">Gerador de senha </a>** 🔑
+
+
 
