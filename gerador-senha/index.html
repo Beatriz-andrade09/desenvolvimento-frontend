@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="assets/script/script.js" defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <main class="main-container flex">
+        <div class="form-login flex">
+           <div class="form-control flex">
+                <label for="login">Nome</label>
+                <input type="text" name="user" id="user" placeholder="CPF ou E-mail">
+           </div>
+
+            <div class="form-control flex">
+                <input type="password" name="password" id="password" placeholder="Senha">
+            </div>
+
+            <div class="form-control flex">
+                <input type="password" name="password-confirm" id="password-confirm" placeholder="Confirmar senha">
+            </div>
+
+            <div class="form-control flex">
+                <p>Quer ajuda para criar uma senha segura? <span id="show-options">Clique aqui.</span></p>
+            </div>
+
+            <div class="form-control flex options">
+                <p>Selecione as opções abaixo para personalizar sua senha:</p>
+
+                <label for="caracteres">Quantidade de caracteres</label>
+                <input type="number" name="characters" id="characters" min="1" max="8" value="3" placeholder="3">
+
+                <label for="numbers">Quantidade de números</label>
+                <input type="number" name="numbers" id="numbers" min="1" max="8" value="3" placeholder="3">
+
+                
+                <label for="numbers">Quantidade de letras</label>
+                <input type="number" name="letters" id="letters" min="1" max="8" value="2" placeholder="2">
+
+                <button type="button" id="gerator-password">Gerar senha</button>
+                <p id="error-message">A senha precisa ter no mínimo 8 digitos. Por favor, tente novamente.</p>
+
+
+                <div class="form-control flex password-generated">
+                    Senha gerada: <span id="password-generated-text"></span>
+                    <button type="button" id="copy-password">Copiar</button>
+                </div>
+            </div>
+
+           
+            <button class="btn-login" type="submit">Entrar</button>
+        </div>
+        <div class="background-login">
+        </div>
+    </main>
+</body>
+</html>

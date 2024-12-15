@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0F1216;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-red: #FF0000;
+}
+
+.flex {
+    display: flex;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 140vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-login {   
+    max-height: 150vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    min-width: 40vw;
+    color: white;
+}
+
+.form-control {
+    width: 30vw;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+.form-control label {
+    margin-bottom: 0.5rem;
+}
+
+.form-control input {
+    background-color: #181C23;
+    height: 2.5rem;
+    padding: 10px;
+    border: none;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid visible;
+    padding: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control input::placeholder {
+    color: rgb(159, 155, 155);
+}
+
+.form-control input:focus {
+    border: 1px solid var(--color-red);
+}
+
+.background-login {
+    background-image: url("../image/login-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 160vh;
+}
+
+button {
+    height: 2.5rem;
+    background-color: var(--color-red);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-login {
+    width: 25vw;
+}
+
+button:hover {
+    background-color: #890505;
+}
+
+#copy-password {
+    width: 15vw;
+}
+
+span {
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color-red);
+}
+
+.options, #copy-password,
+.password-generated-text, #error-message  {
+    display: none;
+}
+
+.password-generated {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    width: 25vw;
+    min-height: 10vh;
+    background-color: #181C23;
+    border: 1px solid var(--color-red);
+    padding: 1rem;
+    margin: 1rem auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.options p {
+    margin-bottom: 2rem;
+}
+
+#error-message {
+    margin-top: 2rem;
+}
+
+.options input {
+    margin-bottom: 1rem;
+    background-color: #E8F0FE;
+}
+
+@media screen and (max-width: 1003px) {
+    .background-login {
+        display: none;
+    }
+
+    .form-login {   
+        justify-content: center; 
+        width: 100%;
+        margin: 5rem auto;
+    }
+
+    .form-control {
+        max-width: 50vw;
+        width: 100%;
+    }
+}
