@@ -25,7 +25,7 @@ Confira abaixo a lista dos projetos concluídos até o momento.
 
 3. **<a href="https://bsa-host.vercel.app/">Página inicial para plataforma de hospedagem</a>** 💻
 
-4. **<a href="https://instagram-git-main-beatriz-s-projects-63158ab8.vercel.app/">Página de login do Instagram</a>** 📲
+4. **<a href="https://instagram-chi-eight.vercel.app/">Página de login do Instagram</a>** 📲
 
 5. **<a href="https://chapters-lyart.vercel.app/">Página inicial da cafeteria Chapters</a>** ☕
 
